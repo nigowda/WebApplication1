@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP app to Azure Web App - azurewebsite21Day1
+name: Build and deploy ASP app to Azure Web App - webappdemo22
 
 on:
   push:
@@ -51,7 +51,7 @@ jobs:
       id: deploy-to-webapp
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'azurewebsite21Day1'
+        app-name: 'webappdemo22'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_bb1935d898704eb19cc2fa8fc6a76de2 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_6bd232bc241d4d1a99cd7e53611ed7fa }}
         package: .
